@@ -39,6 +39,7 @@ jobs:
             murilosilvap/kube-news:${{github.run_number}}
   CD:   
     runs-on: ubuntu-latest
+    needs: [CI]
     steps:
       - uses: actions/checkout@v3
       
